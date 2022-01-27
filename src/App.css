@@ -1,9 +1,8 @@
 body {
-    /* background-color:#61dafb; */
+    background-color:#61dafb;
     font-family: 'Alice', serif;
     font-size: 50px;		
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
 .App {
