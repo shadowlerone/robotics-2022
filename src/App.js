@@ -1,25 +1,29 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+
+import NavBar from "./Navbar";
+import Menu from "./Menu";
+import Landing from "./Landing";
+import Arcanum from './Arcanum';
+import Characters from "./Characters";
+import Vaniercollege from "./Vaniercollege";
+import Journey from "./Journey";
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <h1>Robotics 2022 landing page</h1>
-    </div>
+    <Router hashType="hashbang">
+      <div className="App">
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/menu" component={Menu} />
+          <Route exact path="/journey" component={Journey} />
+          <Route exact path="/arcanum" component={Arcanum} />
+          <Route exact path="/characters" component={Characters} />
+          <Route exact path="/vaniercollege" component={Vaniercollege} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
