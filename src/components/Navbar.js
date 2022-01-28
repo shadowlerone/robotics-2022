@@ -5,7 +5,6 @@ import { withRouter } from "react-router";
 function NavBar() {
     return (
         <div className="navbar">
-            <h3>Connectory</h3>
             <div className="buttons-container">
                 <Link to="/">
                     <button>Landing</button>
