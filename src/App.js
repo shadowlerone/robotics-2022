@@ -8,6 +8,7 @@ import Arcanum from './Arcanum';
 import Characters from "./Characters";
 import Vaniercollege from "./Vaniercollege";
 import Journey from "./Journey";
+import Transition from "./Transition";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Landing} />
+          <Route exact path="/transition" component={Transition} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/journey" component={Journey} />
           <Route exact path="/arcanum" component={Arcanum} />
