@@ -1,6 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
+import './App.css';
 import NavBar from "./Navbar";
 import Menu from "./Menu";
 import Landing from "./Landing";
