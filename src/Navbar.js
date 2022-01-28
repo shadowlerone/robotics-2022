@@ -13,6 +13,9 @@ function NavBar() {
                 <Link to="/menu">
                     <button>Menu</button>
                 </Link>
+                <Link to="/transition">
+                    <button>Transition</button>
+                </Link>
                 <Link to="/journey">
                     <button>Journey</button>
                 </Link>
