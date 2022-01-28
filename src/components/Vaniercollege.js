@@ -5,7 +5,7 @@ export default function Vaniercollege() {
 	return (
 		<div>
 			<style>{'body{background-color: blue;}'}</style>
-      		<h3>This is the Vaniercollege page</h3>
+      		<h1>Vanier College</h1>
     	</div>
   	);
 }

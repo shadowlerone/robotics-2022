@@ -3,7 +3,7 @@ import React from "react";
 export default function Menu() {
   return (
     <div>
-      <h3>This is not the Menu page</h3>
+      <h1>Menu</h1>
     </div>
   );
 }

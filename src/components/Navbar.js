@@ -44,3 +44,29 @@ function Navbar() {
 }
 
 export default Navbar;
+
+{/* <div className="navbar">
+            <div className="buttons-container">
+                <Link to="/">
+                    <button>Landing</button>
+                </Link>
+                <Link to="/menu">
+                    <button>Menu</button>
+                </Link>
+                <Link to="/transition">
+                    <button>Transition</button>
+                </Link>
+                <Link to="/journey">
+                    <button>Journey</button>
+                </Link>
+                <Link to="/arcanum">
+                    <button>Arcanum 2022</button>
+                </Link>
+                <Link to="/characters">
+                    <button>Characters</button>
+                </Link>
+                <Link to="/vaniercollege">
+                    <button>Vanier College</button>
+                </Link>
+            </div>
+        </div> */}

@@ -1,13 +1,18 @@
 body {
     background-color:#1a83ff;
-    font-family: 'Spirax', cursive;
+    font-family: 'RealMagic', cursive;
     font-size: 50px;
     overflow: hidden;
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
+
+@font-face {
+    font-family: RealMagic;
+    src: url(../content/text/fonts/RealMagicPersonalUse-GOnaD.otf);
+}
+
 .App {
   text-align: center;
   height: 100%;
