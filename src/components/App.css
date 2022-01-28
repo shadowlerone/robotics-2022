@@ -1,14 +1,13 @@
 body {
-    background-color:#61dafb;
-    font-family: 'Alice', serif;
+    background-color:#1a83ff;
+    font-family: 'Spirax', cursive;
     font-size: 50px;
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+    margin: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
 .App {
   text-align: center;
   height: 100%;
