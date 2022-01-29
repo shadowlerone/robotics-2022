@@ -1,9 +1,12 @@
 import React from "react";
+import { withNamespaces } from "react-i18next";
 
-export default function Journey() {
+function Journey({t}) {
   return (
     <div className="Journey">
-      <h3>This is the Journey page test</h3>
+      <h1>{t('Journey')}</h1>
     </div>
   );
 }
+
+export default withNamespaces()(Journey);

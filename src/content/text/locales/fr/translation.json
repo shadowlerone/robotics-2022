@@ -1,3 +1,10 @@
 {
-    "Welcome to React": "Bienvenue a react"
+    "Welcome to React": "Benvenue au React",
+    "test": "En marche",
+    "Landing": "Accueil",
+    "Menu": "Menu",
+    "Journey": "Parcours",
+    "Arcanum": "Arcanum '22",
+    "Characters": "Personnages",
+    "VC": "Collège Vanier"
 }

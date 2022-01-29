@@ -1,11 +1,12 @@
 import React from "react";
 import './Vaniercollege.css'
+import { withNamespaces } from "react-i18next";
 
-export default function Vaniercollege() {
+function Vaniercollege({t}) {
 	return (
-		<div>
-			<style>{'body{background-color: blue;}'}</style>
-      		<h1>Vanier College</h1>
+		<div className="Vaniercollege">
+      		<h1>{t('VC')}</h1>
     	</div>
   	);
 }
+export default withNamespaces()(Vaniercollege);

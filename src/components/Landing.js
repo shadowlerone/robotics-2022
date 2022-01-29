@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Landing.css';
+import { withNamespaces } from "react-i18next";
 // import Helmet from 'react-helmet';
 // import Background from '../content/media/images/BG_0.png';
 // import title from '../content/media/images/Items_5.png';
 
-export default function Landing() {
+function Landing({t}) {
     
     return (
         <div className="Landing">
@@ -23,7 +24,7 @@ export default function Landing() {
         
     );
 }
-
+export default withNamespaces()(Landing);
 
 // useEffect(() => {
 // 	if(someStateYouExpectToChangeToTriggerTheBackgroundChange === 'what you expect it to be to trigger the bg change') {
