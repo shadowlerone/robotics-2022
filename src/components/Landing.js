@@ -6,21 +6,29 @@ import './Landing.css';
 // import title from '../content/media/images/Items_5.png';
 
 export default function Landing() {
-    
+
     return (
         <div className="Landing">
-            <img className="title" alt="title here" src={require("../content/media/images/title1.png")}/>
-            <br/>
-            <Link to="/transition">
-                <img className="vial" alt="vial here" src={require("../content/media/images/vial.png")}/>
-                <img className="en" alt="en here" src={require("../content/media/images/en.png")}/>
-            </Link>
-            <Link to="/transition">
-                <img className="fr" alt="fr here" src={require("../content/media/images/en.png")}/>
-                <img className="cake" alt="cake here" src={require("../content/media/images/cake.png")}/>   
-            </Link>
+            {/* <img className="title" alt="title here" src={require("../content/media/images/title1.png")}/> */}
+            <div className="landingWrapper content-wrapper">
+                <Link to="/transition" className="vial">
+                    <img alt="vial here" src={require("../content/media/images/vial.png")} />
+                    {/* <img className="en" alt="en here" src={require("../content/media/images/en.png")} /> */}
+                    <span className="lang en">english</span>
+                </Link>
+                <div>
+                    <div id="title">
+                        <span className="alice">ALICE </span><span className="wonderland">IN<br />VANIERLAND</span><br/>
+                        <div className="subtitle">VANIER ROBOTICS 2022</div>
+                    </div>
+                </div>
+                <Link to="/transition">
+                    <span className="lang en">french</span>
+                    <img className="cake" alt="cake here" src={require("../content/media/images/cake.png")} />
+                </Link>
+            </div>
         </div>
-        
+
     );
 }
 
