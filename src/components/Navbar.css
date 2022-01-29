@@ -1,12 +1,13 @@
 .navbar {
-    height: 80px;
+    height: 0px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 2;
 }
   
 .menu-bars {
-    padding-top: 20px;
+    padding-top: 80px;
     margin-left: 2rem;
     font-size: 3rem;
     background: none;

@@ -4,12 +4,43 @@ h1 {
     margin: 0;
 }
 
-body {
-    background: url("../content/media/images/BG_0.png");
+.Landing {
+    height: 100%;
+    width: 100%;
+    background-image: url("../content/media/images/BG_0.png");
+    z-index: -1;
 }
 
+
 .title {
-    width : 70%;
+    padding-top: 100px;
+    width : 45%;
+}
+
+.cake {
+    width : 25%;
+}
+
+.cake:hover + .fr {
+    transition: 1s;
+    opacity: 1;
+    z-index: 9999;
+}
+
+
+.vial {
+    width : 25%;
+}
+
+.vial:hover + .en {
+    transition: 1s;
+    opacity: 1;
+}
+
+.en, .fr {
+    width : 25%;
+    opacity: 0;
+    z-index: 2;
 }
 
 h3 {
