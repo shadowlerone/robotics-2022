@@ -3,10 +3,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    z-index: 999999;
 }
   
 .menu-bars {
+    padding-top: 20px;
     margin-left: 2rem;
     font-size: 3rem;
     background: none;
