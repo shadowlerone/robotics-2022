@@ -41,12 +41,11 @@ export const MenuData = [
       path: '/vaniercollege',
       icon: <Io5Icons.IoSchoolSharp size={40} />,
       cName: 'nav-text'
+    },
+    {
+        title: 'French',
+        path: '/french',
+        icon: <Io5Icons.IoSchoolSharp size={40} />,
+        cName: 'nav-text'
     }
-    // ,
-    // {
-    //   title: 'Vanier College',
-    //   path: '/vaniercollege',
-    //   icon: <Io5Icons.IoSchoolSharp size={40} />,
-    //   cName: 'nav-text'
-    // }
   ];
