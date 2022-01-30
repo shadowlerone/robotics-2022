@@ -45,16 +45,6 @@ function Navbar({t}) {
                             <span onClick={toggleLang}>{t('Language')}</span>
                         </Link>
                     </li>
-                    {/* <li className='nav-text'>
-                        <Link to='#'>
-                            <span onClick={() => changeLanguage('fr')}>FRANÇAIS</span>
-                        </Link>
-                    </li>
-                    <li className='nav-text'>
-                        <Link to='#'>
-                            <span onClick={() => changeLanguage('en')}>ENGLISH</span>
-                        </Link>                        
-                    </li> */}
                     <li className="nav-text">
                         <Link to='/'>
                             <FaIcons.FaHome size={40} />
