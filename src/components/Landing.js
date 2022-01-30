@@ -16,9 +16,13 @@ function Landing({t}) {
                 <img className="vial" alt="vial here" src={require("../content/media/images/vial.png")}/>
                 <img className="en" alt="en here" src={require("../content/media/images/en.png")}/>
             </Link>
-            <Link to="/transition">
+            {/* <Link to="/transition">
                 <img className="fr" alt="fr here" src={require("../content/media/images/en.png")}/>
                 <img className="cake" alt="cake here" src={require("../content/media/images/cake.png")}/>   
+            </Link> */}
+            <Link to="/transition">
+                <img className="cake" alt="Cake here" src={require("../content/media/images/cake.png")} />
+                <span className="fr" >French</span>
             </Link>
         </div>
         

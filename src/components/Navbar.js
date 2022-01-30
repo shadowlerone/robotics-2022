@@ -24,7 +24,8 @@ function Navbar({t}) {
             <IconContext.Provider value={{ color: '#fff' }}>
             <div className='navbar'>
                 <Link to='#' className='menu-bars'>
-                <FaIcons.FaBars onClick={showSidebar} />
+                    {/* <FaIcons.FaBars onClick={showSidebar} /> */}
+                    <img alt='menu bars' src={require('../content/media/images/bars.png')} width='150px' onClick={showSidebar}/>
                 </Link>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
