@@ -15,10 +15,15 @@ function Navbar({t}) {
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+    const [lang, setLang] = useState(false);
+    const toggleLang = () => {
+        setLang(!lang);
+        if (lang) {
+            i18n.changeLanguage('en');
+        } else {
+            i18n.changeLanguage('fr');
+        }
     }
-
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
@@ -35,6 +40,21 @@ function Navbar({t}) {
                         <VscIcons.VscClose />
                         </Link>
                     </li>
+                    <li className='nav-text'>
+                        <Link to='#'>
+                            <span onClick={toggleLang}>{t('Language')}</span>
+                        </Link>
+                    </li>
+                    {/* <li className='nav-text'>
+                        <Link to='#'>
+                            <span onClick={() => changeLanguage('fr')}>FRANÇAIS</span>
+                        </Link>
+                    </li>
+                    <li className='nav-text'>
+                        <Link to='#'>
+                            <span onClick={() => changeLanguage('en')}>ENGLISH</span>
+                        </Link>                        
+                    </li> */}
                     <li className="nav-text">
                         <Link to='/'>
                             <FaIcons.FaHome size={40} />
@@ -71,17 +91,6 @@ function Navbar({t}) {
                             <span>{t('VC')}</span>
                         </Link>
                     </li>
-                    <li className='nav-text'>
-                        <Link to='#'>
-                            <span onClick={() => changeLanguage('fr')}>FRANÇAIS</span>
-                        </Link>
-                    </li>
-                    <li className='nav-text'>
-                        <Link to='#'>
-                            <span onClick={() => changeLanguage('en')}>ENGLISH</span>
-                        </Link>                        
-                    </li>
-
                 </ul>
             </nav>
             </IconContext.Provider>
