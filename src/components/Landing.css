@@ -1,6 +1,7 @@
 h1 {
-    font-size: 175px;
+    font-size: 150px;
     padding: 0;
+    padding-top: 50px;
     margin: 0;
 }
 
@@ -47,8 +48,7 @@ h1 {
 h3 {
     font-family: 'Cormorant Garamond', serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
 #hi {
     font-family: 'Spirax', cursive;
 }

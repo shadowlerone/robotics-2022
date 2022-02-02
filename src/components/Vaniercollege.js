@@ -6,6 +6,9 @@ function Vaniercollege({t}) {
 	return (
 		<div className="Vaniercollege">
       		<h1>{t('VC')}</h1>
+            <div className="content">
+                <p>{t('placeholder')}</p>
+            </div>
     	</div>
   	);
 }

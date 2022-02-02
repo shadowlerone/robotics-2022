@@ -6,3 +6,10 @@
     background-size: cover;
     z-index: -1;
 }
+
+.content {
+    background: rgba(0, 162, 255, 0.1);
+    overflow-y: scroll;
+    height: 600px;
+    font-family: 'Alice', serif;
+}
