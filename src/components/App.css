@@ -9,7 +9,7 @@ body {
 
 @font-face {
     font-family: RealMagic;
-    src: url(../content/text/fonts/RealMagicPersonalUse-GOnaD.otf);
+    src: url(../assets/text/fonts/RealMagicPersonalUse-GOnaD.otf);
 }
 
 .App {
