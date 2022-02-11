@@ -88,6 +88,12 @@ function Navbar({t}) {
                             <span>{t('VC')}</span>
                         </Link>
                     </li>
+                    <li className="nav-text">
+                        <Link to='/jackpot'>
+                            <GiIcons.GiHoneypot size={50} />
+                            <span>{t('Jackpot')}</span>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             </IconContext.Provider>

@@ -27,6 +27,9 @@ function Menu({t}) {
                     <Link to="/vaniercollege">
                         <button>{t('VC')}</button>
                     </Link>
+                    <Link to="/jackpot">
+                        <button>{t('Jackpot')}</button>
+                    </Link>
                 </div>
             </div>
         </div>
