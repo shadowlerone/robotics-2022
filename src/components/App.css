@@ -18,3 +18,13 @@ body {
   width: 100%;
   z-index: -1;
 }
+
+.content {
+    background: rgba(0, 162, 255, 0.1);
+    overflow-y: auto;
+    height: 70vh;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Alice', serif;
+}
