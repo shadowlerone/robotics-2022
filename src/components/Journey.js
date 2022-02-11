@@ -4,10 +4,10 @@ import { withNamespaces } from "react-i18next";
 function Journey({t}) {
   return (
     <div className="Journey">
-      <h1>{t('Journey')}</h1>
-      <div className="content">
-                <p>{t('placeholder')}</p>
-            </div>
+        <h1>{t('Journey')}</h1>
+        <div className="content">
+            <p>{t('placeholder')}</p>
+        </div>
     </div>
   );
 }

@@ -30,7 +30,7 @@ function Navbar({t}) {
             <div className='navbar'>
                 <Link to='#' className='menu-bars'>
                     {/* <FaIcons.FaBars onClick={showSidebar} /> */}
-                    <img alt='menu bars' src={require('../content/media/images/bars.png')} width='150px' onClick={showSidebar}/>
+                    <img alt='menu bars' src={require('../assets/media/images/bars.png')} width='150px' onClick={showSidebar}/>
                 </Link>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -58,6 +58,13 @@ function Navbar({t}) {
                         </Link>
                     </li>
                     <li className="nav-text">
+                        <Link to='/robot'>
+                            <FaIcons.FaRobot size={50} />
+                            <span>{t('Robot')}</span>
+                        </Link>
+                    </li>
+
+                    <li className="nav-text">
                         <Link to='/arcanum'>
                             <BsIcons.BsGearWideConnected size={50} />
                             <span>{t('Arcanum')}</span>
@@ -65,7 +72,7 @@ function Navbar({t}) {
                     </li>
                     <li className="nav-text">
                         <Link to='/journey'>
-                            <GiIcons.GiCompass size={50} />
+                            <GiIcons.GiRabbitHead size={80} />
                             <span>{t('Journey')}</span>
                         </Link>
                     </li>

@@ -10,6 +10,7 @@ import Characters from "./Characters";
 import Vaniercollege from "./Vaniercollege";
 import Journey from "./Journey";
 import Transition from "./Transition";
+import Robot from "./Robot";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/journey" component={Journey} />
           <Route exact path="/arcanum" component={Arcanum} />
+          <Route exact path="/robot" component={Robot} />
           <Route exact path="/characters" component={Characters} />
           <Route exact path="/vaniercollege" component={Vaniercollege} />
         </Switch>
