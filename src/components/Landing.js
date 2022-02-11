@@ -10,12 +10,12 @@ function Landing({t}) {
             <img className="title" alt="title here" src={require("../content/media/images/title1.png")}/>
             <br/>
             <Link to="/transition">
-                <img className="vial" alt="vial here" src={require("../content/media/images/vial.png")}/>
-                <span className="en">ENGLISH</span>
+                <img className="vial" alt="vial here" src={require("../content/media/images/bottle.png")}/>
+                {/* <span className="en">ENGLISH</span> */}
             </Link>
             <Link to="/transition">
-                <img className="cake" alt="Cake here" src={require("../content/media/images/cake.png")} />
-                <span className="fr">FRANÇAIS</span>
+                <img className="cake" alt="Cake here" src={require("../content/media/images/cookie.png")} />
+                {/* <span className="fr">FRANÇAIS</span> */}
             </Link>
         </div>
         

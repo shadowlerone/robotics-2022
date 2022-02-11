@@ -13,8 +13,6 @@ h1 {
     background-size: cover;
     z-index: -1;
 }
-
-
 .title {
     padding-top: 100px;
     width : 45%;
@@ -23,18 +21,24 @@ h1 {
 .cake {
     width : 20%;
     right: 20%;
+    transition: transform .2s;
 }
+.cake:hover {
+    transform: scale(1.75) rotate(45deg);
+}
+.vial:hover {
+    transform: scale(1.75) rotate(-45deg);
+}
+.vial {
+    width : 20%;
+    transition: transform .2s;
+}
+
 
 .cake:hover + .fr {
     transition: 1s;
     opacity: 1;
 }
-
-
-.vial {
-    width : 20%;
-}
-
 .vial:hover + .en {
     transition: 1s;
     opacity: 1;
