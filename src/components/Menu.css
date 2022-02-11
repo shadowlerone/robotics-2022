@@ -1,7 +1,7 @@
 .Menu {
     height: 100%;
     width: 100%;
-    background-image: url("../content/media/images/BG_3.png");
+    background-image: url("../assets/media/images/BG_3.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
