@@ -8,7 +8,7 @@ h1 {
 .Landing {
     height: 100%;
     width: 100%;
-    background-image: url("../assets/media/images/BG_1.png");
+    background-image: url("../assets/media/images/landing.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
