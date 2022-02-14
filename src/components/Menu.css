@@ -15,12 +15,61 @@
     width: 80%;
     height: 99vh;
     margin: 33.5% 10% 2% 10%;
+    scrollbar-width: thin;
 }
 
-.menuitems:hover {
+.menuitem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  cursor: pointer;
+    text-decoration: none;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.menuitem:nth-child(odd):hover > .menuimage {
     transform: scale(1.35) rotate(-45deg);
 }
 
-.menuitems {
-    transition: transform 1s;
+.menuitem:nth-child(even):hover > .menuimage {
+    transform: scale(1.35) rotate(45deg);
+}
+
+.menuimage {
+    transition: transform 0.25s;
+    transition-timing-function: ease-in-out;
+    order: 1;
+}
+
+.label {
+  font-family: Spirax;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 4rem;
+  text-decoration: none;
+    animation: slidein;
+    animation-delay: 1s;
+}
+
+.menuitem:nth-child(even) > .label {
+  order:2;
+}
+.menuitem:nth-child(odd) > .label {
+  order:-1;
+}
+
+
+
+@keyframes slidein {
+    from {
+        
+    }
+    to {
+        
+    }
 }
