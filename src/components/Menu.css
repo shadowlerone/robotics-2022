@@ -1,18 +1,28 @@
 .Menu {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-image: url("../assets/media/images/BG_3.png");
-    background-size: cover;
+    background-size: contain;
 }
 
 .buttons-container {
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90vw;
     height: 99vh;
-    margin: 33.5% 10% 2% 10%;
+    margin: 33.5% 10% 2% 10%; */
+
+    height: 100vh;
+
+    width: auto;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: center;
+    flex-direction: column;
+    margin: 100% 0% 2% 0%;
 }
 
 .menuitems:hover {
