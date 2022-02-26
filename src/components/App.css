@@ -23,9 +23,9 @@ body {
     background: rgba(0, 162, 255, 0.1);
     overflow-y: auto;
     overflow-x: hidden;
-    height: 70vh;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    height: 100vh;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     font-family: 'Alice', serif;
 }
