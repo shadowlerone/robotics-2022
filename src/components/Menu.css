@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    scrollbar-width: none;
 }
 
 .buttons-container {
@@ -15,7 +16,7 @@
     width: 80%;
     height: 99vh;
     margin: 33.5% 10% 2% 10%;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
 .menuitem {
