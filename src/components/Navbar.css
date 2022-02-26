@@ -57,11 +57,11 @@
 }
   
 .nav-text a:hover {
-    background-color: #1a83ff;
+    background-color: #bb3ee0;
 }
   
 .nav-menu-items {
-    width: 10%;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
