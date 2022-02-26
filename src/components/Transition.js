@@ -1,4 +1,5 @@
 import React from "react";
+import './Transition.css';
 
 export default function Transition() {
   return (
