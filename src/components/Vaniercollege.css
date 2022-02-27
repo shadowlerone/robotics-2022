@@ -1,8 +1,6 @@
 .Vaniercollege {
     height: 100%;
     width: 100%;
-    background-image: url("../assets/media/images/purple.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../assets/media/images/purple.png") center center no-repeat;
     z-index: -1;
 }
