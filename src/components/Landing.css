@@ -1,16 +1,14 @@
 h1 {
-    font-size: 150px;
+    font-size: 75px;
     padding: 0;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     margin: 0;
 }
 
 .Landing {
     height: 100%;
     width: 100%;
-    background-image: url("../assets/media/images/landing.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../assets/media/images/landing.png") center center no-repeat;
     z-index: -1;
 }
 .title {

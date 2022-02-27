@@ -5,9 +5,8 @@ import './Arcanum.css';
 function Arcanum({t}) {
     return (
         <div className="Arcanum">
-            <h1>{t('Arcanum')}</h1>
             <div className="content">
-                <p>{t('placeholder')}</p>
+                <h1>{t('Arcanum')}</h1>
                 <iframe title="Arcanum Playing Field" 
                     src="https://myedu11994.autodesk360.com/shares/public/SH35dfcQT936092f0e430c4781ab51ec101b?mode=embed" 
                     width="100%" 
@@ -17,6 +16,7 @@ function Arcanum({t}) {
                     mozallowfullscreen="true" 
                     frameborder="0">
                 </iframe>
+                <p>{t('placeholder')}</p>
             </div>
             
         </div>

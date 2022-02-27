@@ -6,7 +6,7 @@ import './Menu.css'
 function Menu({t}) {
     return (
         <div className="Menu">
-            <h1>{t('Menu')}</h1>
+            {/* <h1>{t('Menu')}</h1> */}
             <div className="navbar">
                 <div className="buttons-container">
                     <Link to="/" className="menuitem">

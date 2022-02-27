@@ -5,8 +5,9 @@ import { withNamespaces } from "react-i18next";
 function Vaniercollege({t}) {
 	return (
 		<div className="Vaniercollege">
-      		<h1>{t('VC')}</h1>
             <div className="content">
+
+      		    <h1>{t('VC')}</h1>
 
                 <iframe 
                     title="maps" 

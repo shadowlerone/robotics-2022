@@ -9,11 +9,11 @@
 }
 
 .buttons-container {
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90vw;
     height: 99vh;
     margin: 33.5% 10% 2% 10%;
     scrollbar-width: none;
