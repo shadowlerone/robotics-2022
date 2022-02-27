@@ -1,48 +1,62 @@
 h1 {
     font-size: 75px;
     padding: 0;
-    /* padding-top: 50px; */
     margin: 0;
 }
 
 .Landing {
     height: 100%;
     width: 100%;
-    background: url("../assets/media/images/landing.png") center center no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: url("../assets/media/images/BG_0.png") center center no-repeat;
     z-index: -1;
 }
+
 .title {
-    padding-top: 100px;
     width : 45%;
 }
 
 .cake {
     width : 20%;
-    right: 20%;
     transition: transform .2s;
-}
-.cake:hover {
-    transform: scale(1.75) rotate(45deg);
-}
-.vial:hover {
-    transform: scale(1.75) rotate(-45deg);
 }
 .vial {
     width : 20%;
     transition: transform .2s;
 }
 
+.cake:hover {
+    transform: scale(1.25) rotate(45deg);
+}
+.vial:hover {
+    transform: scale(1.25) rotate(-45deg);
+}
 
-.cake:hover + .fr {
+.vial:hover ~ .Landing {
+    background: url("../assets/media/images/landing.png") center center no-repeat;
+    
+}
+
+
+.cake:hover + .en {
     transition: 1s;
     opacity: 1;
 }
-.vial:hover + .en {
+
+.vial:hover + .fr {
     transition: 1s;
     opacity: 1;
 }
 
-.en, .fr {
+.en {
+    width : 25%;
+    opacity: 0;
+}
+
+.fr {
     width : 25%;
     opacity: 0;
 }
@@ -50,7 +64,9 @@ h1 {
 h3 {
     font-family: 'Cormorant Garamond', serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
+
 #hi {
     font-family: 'Spirax', cursive;
 }
