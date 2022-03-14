@@ -36,7 +36,7 @@
     height: 500px;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
 
 
 
@@ -150,7 +150,7 @@ h3 {
     font-family: 'Cormorant Garamond', serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
+
 
 #hi {
     font-family: 'Spirax', cursive;
