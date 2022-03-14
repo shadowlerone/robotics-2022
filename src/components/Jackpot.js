@@ -6,14 +6,16 @@ function Jackpot({t}) {
     
     return (
         <div className="Jackpot">
-            <h6>{t('Our sponsor:')}</h6>
-            <br/>
-            <a className="dotWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
-                {/* <span class="dot">V</span>
-                <span class="dot">C</span>
-                <span class="dot">S</span>
-                <span class="dot">A</span> */}
-                <img className="title" alt="title here" src={require("../assets/media/images/VCSA.png")}/>
+            <h2>{t('partners')}</h2>
+
+            <a className="VCSAWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
+                <img className="vcsa" alt="title here" src={require("../assets/media/images/VCSA.png")}/>
+            </a>
+            <a className="VCWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
+                <img className="vc" alt="title here" src={require("../assets/media/images/vc.png")}/>
+            </a>
+            <a className="CRCWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
+                <img className="crc" alt="title here" src={require("../assets/media/images/crc.png")}/>
             </a>
         </div>
     );
