@@ -4,3 +4,7 @@
     background: url("../assets/media/images/purple.png") center center no-repeat;
     z-index: -1;
 }
+
+iframe {
+    border-radius: 7%;
+}

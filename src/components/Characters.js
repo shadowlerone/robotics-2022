@@ -3,312 +3,35 @@ import { withNamespaces } from 'react-i18next';
 import "./Characters.css"
 
 function Characters({ t }) {    
+    var captainCards = [];
+    for (var i = 0; i < 6; i++) {
+        captainCards.push
+        (
+            <div className="flip-card">
+                <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                        ♥&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥
+                        <img src={require("../assets/media/images/hat.png")} alt="Avatar" style={{width: "175px", borderRadius: "15px"}}/>
+                        ♥♥♥♥♥♥♥♥♥♥♥
+                        <h3>Shanmukh Iyer</h3>
+                    </div>
+                    <div className="flip-card-back">
+                        <h1>John Doe</h1> 
+                        <p>Architect & Engineer</p> 
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div>
+            <div className="cards">
+                {captainCards}
+                
 
-            <section class="cards">
-                
-                <section class="card card--heart" value="2">
-                    <div class="card__inner card__inner--centered">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="3">
-                    <div class="card__inner card__inner--centered">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="4">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="5">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="6">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="7">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol--huge"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="8">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol--big"></div>
-                            <div class="card__symbol card__symbol--big"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="9">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--heart" value="10">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol--big"></div>
-                            <div class="card__symbol card__symbol--big"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section class="cards">
-                
-                <section class="card card--spade" value="2">
-                    <div class="card__inner card__inner--centered">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="3">
-                    <div class="card__inner card__inner--centered">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="4">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="5">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="6">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="7">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol--huge"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="8">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol--big"></div>
-                            <div class="card__symbol card__symbol--big"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-                
-                <section class="card card--spade" value="9">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-                
-               
-                <section class="card card--spade" value="10">
-                    <div class="card__inner">
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                        <div class="card__column card__column--centered">
-                            <div class="card__symbol card__symbol--big"></div>
-                            <div class="card__symbol card__symbol--big"></div>
-                        </div>
-                        <div class="card__column">
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol"></div>
-                            <div class="card__symbol card__symbol--rotated"></div>
-                            <div class="card__symbol"></div>
-                        </div>
-                    </div>
-                </section>
-            </section>
+            </div>
         </div>
     );
 

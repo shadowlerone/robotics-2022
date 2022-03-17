@@ -1,3 +1,9 @@
 .vcsa, .vc, .crc {
-    height: 300px;
+    height: 150px;
+}
+
+.Jackpot {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/media/images/alice_13.png')
 }
