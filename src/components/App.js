@@ -12,6 +12,8 @@ import Journey from "./Journey";
 import Transition from "./Transition";
 import Robot from "./Robot";
 import Jackpot from "./Jackpot"
+import ErrorPage from "./ErrorPage"
+import Gallery from "./Gallery"
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route exact path="/jackpot" component={Jackpot} />
           <Route exact path="/characters" component={Characters} />
           <Route exact path="/vaniercollege" component={Vaniercollege} />
+          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="*" component={ErrorPage} />
         </Switch>
       </div>
     </Router>

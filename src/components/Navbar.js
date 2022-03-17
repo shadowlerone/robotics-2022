@@ -5,6 +5,7 @@ import * as GiIcons from 'react-icons/gi';
 import * as Io5Icons from 'react-icons/io5';
 import * as HeroIcons from 'react-icons/hi';
 import * as BsIcons from 'react-icons/bs';
+import * as GrIcons from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
@@ -92,6 +93,12 @@ function Navbar({t}) {
                         <Link to='/jackpot'>
                             <GiIcons.GiHoneypot size={50} />
                             <span>{t('Jackpot')}</span>
+                        </Link>
+                    </li>
+                    <li className="nav-text" style={{display: `none`}}>
+                        <Link to='/gallery'>
+                            <GrIcons.GrGallery style={{filter: `invert(1)`}} size={40} />
+                            <span>{t('Gallery')}</span>
                         </Link>
                     </li>
                 </ul>
