@@ -61,7 +61,7 @@ function Menu({ t }) {
             <div className="buttons-container">
                 {
                     menu.map((m) => {
-                        return <MenuItem name={m.name} src={m.src} alt={m.alt} />
+                        return <MenuItem name={m.name} to={m.to} src={m.src} alt={m.alt} />
                     })
                 }
             </div>
