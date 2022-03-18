@@ -18,22 +18,22 @@ import Gallery from "./Gallery"
 function App() {
   return (
     <Router hashType="hashbang">
-      <div className="App">
-        <NavBar />
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/transition" component={Transition} />
-          <Route exact path="/menu" component={Menu} />
-          <Route exact path="/journey" component={Journey} />
-          <Route exact path="/arcanum" component={Arcanum} />
-          <Route exact path="/robot" component={Robot} />
-          <Route exact path="/jackpot" component={Jackpot} />
-          <Route exact path="/characters" component={Characters} />
-          <Route exact path="/vaniercollege" component={Vaniercollege} />
-          <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="*" component={ErrorPage} />
-        </Switch>
-      </div>
+        <div className="App">
+            <NavBar />
+            <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/transition" component={Transition} />
+                <Route exact path="/menu" component={Menu} />
+                <Route exact path="/journey" component={Journey} />
+                <Route exact path="/arcanum" component={Arcanum} />
+                <Route exact path="/robot" component={Robot} />
+                <Route exact path="/jackpot" component={Jackpot} />
+                <Route exact path="/characters" component={Characters} />
+                <Route exact path="/vaniercollege" component={Vaniercollege} />
+                <Route exact path="/gallery" component={Gallery} />
+                <Route exact path="*" component={ErrorPage} />
+            </Switch>
+        </div>
     </Router>
   );
 }

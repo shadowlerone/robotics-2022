@@ -1,7 +1,12 @@
-.ErrorPage {
-    color: #fff;
-    height: 100%;
+.Cheshire {
+    pointer-events: none;
+    position: absolute;
     width: 100%;
-    background: url("../assets/media/images/cat_landing.jpg") center center no-repeat;
-   
+    height: 100%;
+    z-index: -9999999999;
+    display: block;
+}
+
+.error, .lost {
+    z-index: 100000;
 }

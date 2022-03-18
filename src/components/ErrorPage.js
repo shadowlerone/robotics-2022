@@ -6,11 +6,11 @@ import './ErrorPage.css'
 function ErrorPage({t}) {
     
     return (
-        <div className="ErrorPage">
-            <h1>{t('error')}</h1>
-            <h2>{t('lost')}</h2>
-            {/* <img style={{style}} className="CheshireCat" alt="Cat" src={require("../assets/media/images/cat_landing.jpg")}/> */}
-        </div>
+        <>
+            <img className="Cheshire" alt="cheshire" src={require("../assets/media/images/cat_landing.jpg")}/>
+            <h1 className="error" >{t('error')}</h1>
+            <h2 className="lost" >{t('lost')}</h2>
+        </>
     );
 }
 export default withNamespaces()(ErrorPage);

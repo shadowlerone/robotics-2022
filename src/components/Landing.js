@@ -7,30 +7,12 @@ function Landing({t}) {
     
     return (
         <>
-            {/* <div className="LandingDark"></div>
-            <div className="Landing">
-                <Link to="/transition">
-                    <span className="en">ENGLISH</span>
-                    <img className="cake" alt="Cake here" src={require("../assets/media/images/cookie.png")} />
-                    
-                </Link>
-
-                <a href="https://www.alice-in-wonderland.net/" target="_blank" rel="noreferrer" >
-                    <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/>
-                </a>
-
-                <Link to="/transition">
-                    <img className="vial" alt="vial here" src={require("../assets/media/images/bottle.png")}/>
-                    <span className="fr">FRANÇAIS</span>
-                </Link>
-            </div> */}
             <img className="BGDark" alt="Dark BG here" src={require("../assets/media/images/landing.png")}/>
             <img className="BGLight" alt="Light BG here" src={require("../assets/media/images/pinklanding.png")}/>
             <div className="container" >
                 <div className="row1" >
                     <Link to="/transition">
-                        {/* <span className="en">ENGLISH</span> */}
-                        <img className="cake" alt="Cake here" src={require("../assets/media/images/en.png")} />
+                        <img className="cake" alt="English" src={require("../assets/media/images/en.png")} />
                         <img className="cake" alt="Cake here" src={require("../assets/media/images/cookie.png")} />
                         
                     </Link>
@@ -43,8 +25,7 @@ function Landing({t}) {
                 <div className="row3" >
                     <Link to="/transition">
                         <img className="vial" alt="Vial here" src={require("../assets/media/images/bottle.png")}/>
-                        {/* <span className="fr">FRANÇAIS</span> */}
-                        <img className="vial" alt="Vial here" src={require("../assets/media/images/fr.png")} />
+                        <img className="vial" alt="French" src={require("../assets/media/images/fr.png")} />
                     </Link>
                 </div>
                 
