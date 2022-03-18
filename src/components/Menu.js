@@ -3,40 +3,67 @@ import { withNamespaces } from "react-i18next";
 import { Link } from 'react-router-dom';
 import './Menu.css'
 
-function Menu({t}) {
+function MenuItem(props) {
+    return (
+        <Link to={props.to} className="menuitem">
+            <img className="menuimage" alt={props.alt} src={props.src} width="300px" />
+            <button className="label" >{props.name}</button>
+        </Link>)
+}
+
+function Menu({ t }) {
+    var menu = [
+        {
+            to: "/",
+            name: t('Home'),
+            src: require("../assets/media/images/teapot.png"),
+            alt: 'teapot',
+        },
+        {
+            to: "/journey",
+            name: t('Journey'),
+            src: require("../assets/media/images/pinkcup.png"),
+            alt: "pinkcup"
+        },
+        {
+            to: "/robot",
+            name: t('Robot'),
+            src: require("../assets/media/images/watch.png"),
+            alt: "watch"
+        },
+        {
+            to: "/arcanum",
+            name: t("Arcanum"),
+            src: require("../assets/media/images/hat.png"),
+            alt: "hat"
+        },
+        {
+            to: "/characters",
+            name: t('Characters'),
+            src: require("../assets/media/images/cards.png"),
+            alt: "cards"
+        },
+        {
+            to: "/vaniercollege",
+            name: t('VC'),
+            src: require("../assets/media/images/bluecup.png"),
+            alt: "blue cup"
+        },
+        {
+            to: "/jackpot",
+            name: t('Jackpot'),
+            src: require("../assets/media/images/crown.png"),
+            alt: "Crown"
+        }
+    ];
     return (
         <div className="Menu">
-            <div className="navbar">
-                <div className="buttons-container">
-                    <Link to="/">
-                    <img className="menuitems" alt="cards here" src={require("../assets/media/images/teapot.png")} width="300px"/>
-                        <button className="label" >{t('Home')}</button>
-                    </Link>
-                    <Link to="/journey">
-                        <button className="label" >{t('Journey')}</button>
-                        <img className="menuitems" alt="cards here" src={require("../assets/media/images/pinkcup.png")} width="300px"/>
-                    </Link>
-                    <Link to="/robot">
-                    <img className="menuitems" alt="cards here" src={require("../assets/media/images/watch.png")} width="300px"/>
-                        <button className="label" >{t('Robot')}</button>
-                    </Link>
-                    <Link to="/arcanum">
-                        <button className="label" >{t('Arcanum')}</button>
-                        <img className="menuitems" alt="cards here" src={require("../assets/media/images/hat.png")} width="300px"/>
-                    </Link>
-                    <Link to="/characters">
-                        <img className="menuitems" alt="cards here" src={require("../assets/media/images/cards.png")} width="300px"/>
-                        <button className="label" >{t('Characters')}</button>
-                    </Link>
-                    <Link to="/vaniercollege">
-                        <button className="label" >{t('VC')}</button>
-                        <img className="menuitems" alt="cards here" src={require("../assets/media/images/bluecup.png")} width="300px"/>
-                    </Link>
-                    <Link to="/jackpot">
-                    <img className="menuitems" alt="cards here" src={require("../assets/media/images/crown.png")} width="300px"/>
-                        <button className="label" >{t('Jackpot')}</button>
-                    </Link>
-                </div>
+            <div className="buttons-container">
+                {
+                    menu.map((m) => {
+                        return <MenuItem name={m.name} src={m.src} alt={m.alt} />
+                    })
+                }
             </div>
         </div>
     );
