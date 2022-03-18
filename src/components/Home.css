@@ -79,7 +79,7 @@
     margin: 0;
 }
 
-.Landing {
+.Home {
     height: 100%;
     width: 100%;
     display: flex;
@@ -90,12 +90,12 @@
     z-index: -1;
 }
 
-.LandingDark {
+.HomeDark {
     height: 100%;
     width: 100%;
     z-index: -1;
     display: none;
-    background: url("../assets/media/images/landing.png") center center no-repeat;
+    background: url("../assets/media/images/Home.png") center center no-repeat;
 }
 
 .title {
@@ -120,9 +120,9 @@
     transform: scale(1.25) rotate(-45deg);
 }
 
-.vial:hover + .Landing {
+.vial:hover + .Home {
     transition: 1s;
-    background: url("../assets/media/images/landing.png") center center no-repeat;
+    background: url("../assets/media/images/Home.png") center center no-repeat;
 }
 
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Landing.css';
+import './Home.css';
 import { withNamespaces } from "react-i18next";
 
-function Landing({t}) {
+function Home({t}) {
     
     return (
         <>
@@ -35,7 +35,7 @@ function Landing({t}) {
         
     );
 }
-export default withNamespaces()(Landing);
+export default withNamespaces()(Home);
 
 // useEffect(() => {
 // 	if(someStateYouExpectToChangeToTriggerTheBackgroundChange === 'what you expect it to be to trigger the bg change') {

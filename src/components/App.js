@@ -4,7 +4,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import NavBar from "./Navbar";
 import Menu from "./Menu";
-import Landing from "./Landing";
+import Home from "./Home";
 import Arcanum from './Arcanum';
 import Characters from "./Characters";
 import Vaniercollege from "./Vaniercollege";
@@ -21,7 +21,7 @@ function App() {
         <div className="App">
             <NavBar />
             <Switch>
-                <Route exact path="/" component={Landing} />
+                <Route exact path="/" component={Home} />
                 <Route exact path="/transition" component={Transition} />
                 <Route exact path="/menu" component={Menu} />
                 <Route exact path="/journey" component={Journey} />

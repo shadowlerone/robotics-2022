@@ -10,7 +10,7 @@ function Menu({t}) {
                 <div className="buttons-container">
                     <Link to="/">
                     <img className="menuitems" alt="cards here" src={require("../assets/media/images/teapot.png")} width="300px"/>
-                        <button className="label" >{t('Landing')}</button>
+                        <button className="label" >{t('Home')}</button>
                     </Link>
                     <Link to="/journey">
                         <button className="label" >{t('Journey')}</button>

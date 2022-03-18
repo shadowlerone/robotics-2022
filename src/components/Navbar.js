@@ -49,7 +49,7 @@ function Navbar({t}) {
                     <li className="nav-text">
                         <Link to='/'>
                             <FaIcons.FaHome size={40} />
-                            <span>{t('Landing')}</span>
+                            <span>{t('Home')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
