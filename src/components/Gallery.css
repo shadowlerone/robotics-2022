@@ -1,0 +1,10 @@
+.Gallery {
+    background-color: grey;
+    border-radius: 6.8rem;
+    position: fixed;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+}
