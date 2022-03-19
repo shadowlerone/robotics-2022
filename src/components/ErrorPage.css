@@ -8,5 +8,6 @@
 }
 
 .error, .lost {
+    color: #fff;
     z-index: 100000;
 }
