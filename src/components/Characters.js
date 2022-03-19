@@ -245,11 +245,11 @@ function Characters({ t }) {
             back: require("../assets/media/images/members/backs/b_Luca.png"),
             alt: 'Card',
         },
-        // {
-        //     front: require("../assets/media/images/members/fronts/website/f_web_Alex.png"),
-        //     back: require("../assets/media/images/members/backs/b_Alex.png"),
-        //     alt: 'Card',
-        // },
+        {
+            front: require("../assets/media/images/members/fronts/website/f_web_Alex.png"),
+            back: require("../assets/media/images/members/backs/b_Alex.png"),
+            alt: 'Card',
+        },
         {
             front: require("../assets/media/images/members/fronts/website/f_web_Adam.png"),
             back: require("../assets/media/images/members/backs/b_Adam.png"),
