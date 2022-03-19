@@ -298,7 +298,7 @@ function Characters({ t }) {
 
 
     return (
-        <div>
+        <div className="Characters" >
             <div className="cards">
                 {/* {captainCards} */}
                 {

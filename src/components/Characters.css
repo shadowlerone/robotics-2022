@@ -1,3 +1,9 @@
+.Characters {
+    height: 100vh;
+    width: 100vw;
+    background: url("../assets/media/images/BG4characters.png") center center no-repeat;
+}
+
 .cards {
     text-align: center;
     /* width: 95%; */
