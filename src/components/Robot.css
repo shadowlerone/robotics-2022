@@ -1,0 +1,11 @@
+.robot1, .robot2, .robot3 {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+
+.cadContainer {
+    top: 5%;
+    position: sticky;
+    position: -webkit-sticky;
+}
