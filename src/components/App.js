@@ -9,7 +9,9 @@ import Arcanum from './Arcanum';
 import Characters from "./Characters";
 import Vaniercollege from "./Vaniercollege";
 import Journey from "./Journey";
-import Transition from "./Transition";
+import Transition1 from "./Transition1";
+import Transition2 from "./Transition2";
+import Transition3 from "./Transition3";
 import Robot from "./Robot";
 import Jackpot from "./Jackpot"
 import ErrorPage from "./ErrorPage"
@@ -22,7 +24,9 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/transition" component={Transition} />
+                <Route exact path="/transition-1" component={Transition1} />
+                <Route exact path="/transition-2" component={Transition2} />
+                <Route exact path="/transition-3" component={Transition3} />
                 <Route exact path="/menu" component={Menu} />
                 <Route exact path="/journey" component={Journey} />
                 <Route exact path="/arcanum" component={Arcanum} />
