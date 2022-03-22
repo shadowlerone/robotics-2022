@@ -12,6 +12,10 @@
     overflow-y: scroll;
 }
 
+.cards > h1 {
+    color: #fff;
+}
+
 .flip-card-front > img, 
 .flip-card-back > img {
     height: 400px;

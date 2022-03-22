@@ -12,9 +12,9 @@ import { IconContext } from 'react-icons';
 import i18n from '../i18n';
 import { withNamespaces } from 'react-i18next';
 
+
 function Navbar({t}) {
     const [sidebar, setSidebar] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
     const [lang, setLang] = useState(false);
     const toggleLang = () => {
@@ -25,6 +25,7 @@ function Navbar({t}) {
             i18n.changeLanguage('fr');
         }
     }
+    
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>

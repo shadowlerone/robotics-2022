@@ -303,42 +303,49 @@ function Characters({ t }) {
             {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
             <div className="cards">
                 {/* {captainCards} */}
+                <h1>{t("Captains: ")}</h1>
                 {
                     captains.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
                 <br/><br/><br/>
+                <h1>{t("Build Team: ")}</h1>
                 {
                     build.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
                 <br/><br/><br/>
+                <h1>{t("Programming Team: ")}</h1>
                 {
                     programming.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
                 <br/><br/><br/>
+                <h1>{t("Kiosk Team: ")}</h1>
                 {
                     kiosk.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
                 <br/><br/><br/>
+                <h1>{t("Website Team: ")}</h1>
                 {
                     website.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
                 <br/><br/><br/>
+                <h1>{t("Journalism Team: ")}</h1>
                 {
                     journalism.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
                 <br/><br/><br/>
+                <h1>{t("Video Team: ")}</h1>
                 {
                     video.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
