@@ -16,10 +16,19 @@
     /* overflow-y: scroll; */
 }
 
+.cards > h1 {
+    color: #fff;
+}
+
+.flip-card-front > img, 
+.flip-card-back > img {
+    height: 400px;
+}
+
 .flip-card {
     background-color: transparent;
-    width: 175px;
-    height: 250px;
+    width: 280px;
+    height: 400px;
     perspective: 1000px;
     display: inline-block
 }
@@ -62,9 +71,4 @@
     background-color: #000;
     color: rgb(255, 0, 0);
     transform: rotateY(180deg);
-}
-
-.flip-card-front > img, 
-.flip-card-back > img {
-    height: 250px;
 }

@@ -2,4 +2,36 @@
     overflow-y: auto;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.span {
+    width: 100vw;
+    margin: 0;
+}
+.titleArcanum {
+    margin-bottom: 0;
+}
+
+.cadPane {
+    flex: 45%;
+}
+
+.playingField {
+    top: 25%;
+    width: 95%;
+    height: 50vh;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.contentPane {
+    flex: 55%;
+    margin: 0px, 20px, 0px;
+}
+
+@media (max-width: 850px) {
+    .cadPane, .contentPane {
+        flex-direction: column;
+    }
 }
