@@ -1,9 +1,32 @@
 .vcsa, .vc, .crc {
-    height: 150px;
+    height: 100%;
+}
+
+.VCSAWrapper, .VCWrapper, .CRCWrapper {
+    height: 20%;
+    margin-bottom: 70px;
 }
 
 .Jackpot {
-    /* width: 100vw;
-    height: 100vh; */
-    background-image: url('../assets/media/images/alice_13.png')
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/media/images/alice_13.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 685px) {
+    .VCSAWrapper, .VCWrapper, .CRCWrapper {
+        /* width: 100%; */
+        height: 140px;
+    }
+}
+
+@media (max-height: 760px) {
+    .Jackpot {
+        overflow-y: auto;
+    }
 }

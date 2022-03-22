@@ -7,13 +7,17 @@
 }
 
 .cards {
-    /* height: 100vh; */
+    height: 100vh;
     text-align: center;
-    /* width: 95%; */
-    max-width: 50%;
-    /* max-width: 800px; */
+    width: 95%;
+    /* max-width: 50%; */
+    max-width: 1200px;
     margin: 0 auto;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
 }
 
 .cards > h1 {
@@ -30,6 +34,8 @@
     width: 280px;
     height: 400px;
     perspective: 1000px;
+    margin-right: 20px;
+    margin-left: 20px;
     display: inline-block
 }
 
