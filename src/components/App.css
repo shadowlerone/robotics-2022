@@ -1,9 +1,9 @@
 body {
     font-family: 'Alice', serif;
     font-size: 50px;
-    overflow: hidden;
+    /* overflow: hidden;
     height: 100vh;
-    width: 100vw;
+    width: 100vw; */
     margin: 0;
 }
 
@@ -15,17 +15,18 @@ body {
 .App {
   text-align: center;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   z-index: -1;
 }
 
 .content {
     background: rgba(0, 162, 255, 0.1);
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 100vh;
-    width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    /* height: 100vh; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Alice', serif;
+    padding: 2rem;
 }
