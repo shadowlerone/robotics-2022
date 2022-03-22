@@ -43,7 +43,7 @@ function Characters({ t }) {
 
     var captains = [
         {
-            front: require("../assets/media/images/members/fronts/captains/f_capt_Sabrina.png"),
+            front: require("../assets/media/images/members/fronts/captains/Sabrinas_TEAM_captain_card.png"),
             back: require("../assets/media/images/members/backs/b_Sabrina.png"),
             alt: 'Card',
         },
@@ -62,21 +62,21 @@ function Characters({ t }) {
             back: require("../assets/media/images/members/backs/b_Jeanard.png"),
             alt: 'Card',
         },
-        {
-            front: require("../assets/media/images/members/fronts/captains/f_capt_kiosk_Emily.png"),
-            back: require("../assets/media/images/members/backs/b_Emily.png"),
-            alt: 'Card',
-        },
+        // {
+        //     front: require("../assets/media/images/members/fronts/captains/f_capt_kiosk_Emily.png"),
+        //     back: require("../assets/media/images/members/backs/b_Emily.png"),
+        //     alt: 'Card',
+        // },
         {
             front: require("../assets/media/images/members/fronts/captains/f_capt_web_Shanmukh.png"),
             back: require("../assets/media/images/members/backs/b_Shanmukh.png"),
             alt: 'Card',
         },
-        {
-            front: require("../assets/media/images/members/fronts/captains/f_capt_vid_Dellen.png"),
-            back: require("../assets/media/images/members/backs/b_Dellen.png"),
-            alt: 'Card',
-        },
+        // {
+        //     front: require("../assets/media/images/members/fronts/captains/f_capt_vid_Dellen.png"),
+        //     back: require("../assets/media/images/members/backs/b_Dellen.png"),
+        //     alt: 'Card',
+        // },
         {
             front: require("../assets/media/images/members/fronts/captains/f_capt_vid_Tramanh.png"),
             back: require("../assets/media/images/members/backs/b_Tramanh.png"),
@@ -257,14 +257,15 @@ function Characters({ t }) {
         }
     ];
     var video = [
-        {
-            front: require("../assets/media/images/members/fronts/captains/f_capt_vid_Dellen.png"),
-            back: require("../assets/media/images/members/backs/b_Dellen.png"),
-            alt: 'Card',
-        },
+        
         {
             front: require("../assets/media/images/members/fronts/captains/f_capt_vid_Tramanh.png"),
             back: require("../assets/media/images/members/backs/b_Tramanh.png"),
+            alt: 'Card',
+        },
+        {
+            front: require("../assets/media/images/members/fronts/captains/f_capt_vid_Dellen.png"),
+            back: require("../assets/media/images/members/backs/b_Dellen.png"),
             alt: 'Card',
         },
         {
@@ -299,49 +300,58 @@ function Characters({ t }) {
 
     return (
         <div className="Characters" >
+            {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
             <div className="cards">
                 {/* {captainCards} */}
+                <h1>{t("Captains: ")}</h1>
                 {
                     captains.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <br/>
+                <br/><br/><br/>
+                <h1>{t("Build Team: ")}</h1>
                 {
                     build.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <br/>
+                <br/><br/><br/>
+                <h1>{t("Programming Team: ")}</h1>
                 {
                     programming.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <br/>
+                <br/><br/><br/>
+                <h1>{t("Kiosk Team: ")}</h1>
                 {
                     kiosk.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <br/>
+                <br/><br/><br/>
+                <h1>{t("Website Team: ")}</h1>
                 {
                     website.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <br/>
-                {
-                    video.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <br/>
+                <br/><br/><br/>
+                <h1>{t("Journalism Team: ")}</h1>
                 {
                     journalism.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <br/><br/><br/>
+                <h1>{t("Video Team: ")}</h1>
+                {
+                    video.map((i) => {
+                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
+                    })
+                }
+                
 
             </div>
         </div>
