@@ -28,14 +28,14 @@ function Journey({t}) {
                 <span className="span" >
                     <h1>{t('Journey')}</h1>
                 </span>
-
                 {
                     pairs.map((i) => {
                         return <MediaContent media={i.media} alt={i.alt} content={i.content} />
                     })
                 }
-                
-               
+                <button onClick={() => {console.log("clicked!")}} >
+                    <img width="100px" src={require("../assets/media/images/rabbit.png")} alt="Rabbit"/>
+                </button>
             </div>
         </>
     );
