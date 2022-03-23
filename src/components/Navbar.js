@@ -16,6 +16,7 @@ import { withNamespaces } from 'react-i18next';
 function Navbar({t}) {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
+    
     const [lang, setLang] = useState(false);
     const toggleLang = () => {
         setLang(!lang);
@@ -96,7 +97,7 @@ function Navbar({t}) {
                             <span>{t('Jackpot')}</span>
                         </Link>
                     </li>
-                    <li className="nav-text" style={{display: `none`}}>
+                    <li className="nav-text" style={{display: `none`, borderStyle: `dashed`}}>
                         <Link to='/gallery'>
                             <GrIcons.GrGallery style={{filter: `invert(1)`}} size={40} />
                             <span>{t('Gallery')}</span>

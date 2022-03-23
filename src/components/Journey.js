@@ -17,15 +17,19 @@ import { withNamespaces } from 'react-i18next';
 function Journey({t}) {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
+
     const [gallery, setGallery] = useState(false);
     const showGallery = () => setGallery(!gallery);
+
     var unhidden = {
         display : "block"
     };
     var hidden = {
         display : "none"
     };
+
     const [lang, setLang] = useState(false);
+
     const toggleLang = () => {
         setLang(!lang);
         if (lang) {
@@ -34,6 +38,7 @@ function Journey({t}) {
             i18n.changeLanguage('fr');
         }
     }
+    
     const toggleHidden = () => {
         showSidebar();
         showGallery();

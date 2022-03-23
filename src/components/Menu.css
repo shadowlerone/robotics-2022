@@ -21,7 +21,7 @@
 .menuitem {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   cursor: pointer;
   text-decoration: none;
   flex-grow: 2;
