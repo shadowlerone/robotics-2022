@@ -16,17 +16,17 @@ function Journey(props) {
     var pairs = [
         {
             content: props.t('placeholder-medium'),
-            media: require("../assets/media/images/teapot.png"),
+            media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
         {
             content: props.t('placeholder-small'),
-            media: require("../assets/media/images/teapot.png"),
+            media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
         {
             content: props.t('placeholder-small'),
-            media: require("../assets/media/images/teapot.png"),
+            media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
     ]
