@@ -5,16 +5,9 @@ import { withNamespaces } from "react-i18next";
 import i18n from '../i18n';
 
 
-function Home({t}) {
+function Home(props) {
     const [lang, setLang] = useState(false);
-    // const toggleLang = () => {
-    //     setLang(!lang);
-    //     if (lang) {
-    //         i18n.changeLanguage('en');
-    //     } else {
-    //         i18n.changeLanguage('fr');
-    //     }
-    // }
+    
     const toEn = () => {
         setLang(true);
         i18n.changeLanguage('en');

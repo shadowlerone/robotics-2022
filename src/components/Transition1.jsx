@@ -4,7 +4,7 @@ import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import "./Transition.css"
 
-function Transition1({t}) {
+function Transition1(props) {
     
 
   return (

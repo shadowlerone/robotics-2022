@@ -2,12 +2,11 @@ import React from "react";
 import './Vaniercollege.css'
 import { withNamespaces } from "react-i18next";
 
-function Vaniercollege({t}) {
+function Vaniercollege(props) {
 	return (
 		<div className="Vaniercollege">
 
-            <h1>{t('VC')}</h1>
-            
+            <h1>{props.t('VC')}</h1>
 
             <iframe 
                 className="vaniermap"
@@ -18,7 +17,7 @@ function Vaniercollege({t}) {
                 loading="lazy">
             </iframe>
             
-            <p>{t('placeholder')}</p>
+            <p>{props.t('placeholder')}</p>
         </div>
   	);
 }

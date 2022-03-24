@@ -13,9 +13,7 @@ import i18n from '../i18n';
 import { withNamespaces } from 'react-i18next';
 
 
-function Navbar({t}) {
-    const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+function Navbar(props) {
     
     const [lang, setLang] = useState(false);
     const toggleLang = () => {
@@ -33,11 +31,11 @@ function Navbar({t}) {
             <div className='navbar'>
                 <Link to='#' className='menu-bars'>
                     {/* <FaIcons.FaBars onClick={showSidebar} /> */}
-                    <img alt='menu bars' src={require('../assets/media/images/bars.png')} width='150px' onClick={showSidebar}/>
+                    <img alt='menu bars' src={require('../assets/media/images/bars.png')} width='150px' onClick={props.showSidebar}/>
                 </Link>
             </div>
-            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showSidebar}>
+            <nav className={props.sidebar ? 'nav-menu active' : 'nav-menu'}>
+                <ul className='nav-menu-items' onClick={props.showSidebar}>
                     <li className='navbar-toggle'>
                         <Link to='#' className='menu-bars'>
                         <VscIcons.VscClose />
@@ -45,62 +43,62 @@ function Navbar({t}) {
                     </li>
                     <li className='nav-text'>
                         <Link to='#'>
-                            <span onClick={toggleLang}>{t('Language')}</span>
+                            <span onClick={toggleLang}>{props.t('Language')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/'>
                             <FaIcons.FaHome size={40} />
-                            <span>{t('Home')}</span>
+                            <span>{props.t('Home')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/menu'>
                             <GiIcons.GiTeapot size={50} />
-                            <span>{t('Menu')}</span>
+                            <span>{props.t('Menu')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/robot'>
                             <FaIcons.FaRobot size={50} />
-                            <span>{t('Robot')}</span>
+                            <span>{props.t('Robot')}</span>
                         </Link>
                     </li>
 
                     <li className="nav-text">
                         <Link to='/arcanum'>
                             <BsIcons.BsGearWideConnected size={50} />
-                            <span>{t('Arcanum')}</span>
+                            <span>{props.t('Arcanum')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/journey'>
                             <GiIcons.GiRabbitHead size={80} />
-                            <span>{t('Journey')}</span>
+                            <span>{props.t('Journey')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/characters'>
                             <HeroIcons.HiUsers size={46} />
-                            <span>{t('Characters')}</span>
+                            <span>{props.t('Characters')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/vaniercollege'>
                             <Io5Icons.IoSchoolSharp size={40} />
-                            <span>{t('VC')}</span>
+                            <span>{props.t('VC')}</span>
                         </Link>
                     </li>
                     <li className="nav-text">
                         <Link to='/jackpot'>
                             <GiIcons.GiHoneypot size={50} />
-                            <span>{t('Jackpot')}</span>
+                            <span>{props.t('Jackpot')}</span>
                         </Link>
                     </li>
-                    <li className="nav-text" style={{display: `none`, borderStyle: `dashed`}}>
+                    <li className="nav-text" id='gallery' style={{display: `none`, borderStyle: `dashed`}}>
                         <Link to='/gallery'>
                             <GrIcons.GrGallery style={{filter: `invert(1)`}} size={40} />
-                            <span>{t('Gallery')}</span>
+                            <span>{props.t('Gallery')}</span>
                         </Link>
                     </li>
                 </ul>
