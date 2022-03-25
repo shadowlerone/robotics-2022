@@ -1,11 +1,70 @@
 .Vaniercollege {
-    height: 100%;
+    background: url("../assets/media/images/vanierland.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100vw;
+    color: #FFF;
+}
+
+.Vaniercollege > h1 {
+
+    margin: 20px;
+    padding: 0;
+}
+.pairs {
     width: 100%;
-    background: url("../assets/media/images/purple.png") center center no-repeat;
-    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.contentBlurb {
+    background-color: rgb(108, 0, 180, 0.2);
+    width: 50%;
+    border-radius: 20px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.mediaBlurb {
+    width: 50%;
+}
+
+.mediaBlurb > img {
+    width: 75%;
+}
+
+.pairs:nth-child(even) > .contentBlurb {
+    order: 2;
+}
+.pairs:nth-child(odd) > .contentBlurb {
+    order: -1;
+}
+
+@media (max-width: 900px) {
+    .pairs:nth-child(even) > .contentBlurb {
+        order: 1;
+    }
+    .pairs:nth-child(odd) > .contentBlurb {
+        order: 1;
+    }
+    .pairs {
+        flex-direction: column;
+    }
+    .mediaBlurb {
+        width: 100%;
+    }
+    .contentBlurb {
+        width: 100%;
+    }
 }
 
 iframe {
     border-radius: 25px;
-    height: 70vh;
+    height: 60vh;
+    width: 90%;
 }

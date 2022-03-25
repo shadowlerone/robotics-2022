@@ -1,6 +1,7 @@
 .Menu {
-   
-  background: url("../assets/media/images/BG_3.png") center center no-repeat;
+  background: url("../assets/media/images/BG_3.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   /* background-size: contain; */
 }
 
@@ -22,7 +23,7 @@
 .menuitem {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   cursor: pointer;
   text-decoration: none;
   flex-grow: 2;

@@ -5,7 +5,30 @@
 }
 
 .cadContainer {
-    top: 5%;
+    top: 0;
     position: sticky;
     position: -webkit-sticky;
+}
+
+.ArcanumR {
+    overflow-y: auto;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.cadPaneR {
+    flex: 45%;
+}
+.contentPaneR {
+    flex: 55%;
+    margin: 0px, 20px, 0px;
+}
+
+@media (max-width: 850px) {
+    .cadPaneR, .contentPaneR {
+        flex-direction: column;
+    }
 }
